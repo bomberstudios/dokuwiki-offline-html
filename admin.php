@@ -12,7 +12,7 @@ if(!defined('DOKU_INC')) die();
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 
 define('OFFLINEHTML_TEMPLATES', dirname(__FILE__) . '/templates/');
-define('OFFLINEHTML_RENDERER', 'offlinehtml');
+define('OFFLINEHTML_RENDERER', 'offlinehtml2');
 if (!defined('NL')) define('NL', "\n");
 //HACK prevent output from css.php
 define('SIMPLE_TEST', true);
@@ -27,7 +27,7 @@ require_once(DOKU_INC . 'lib/exe/css.php');
 
 /**
  */
-class admin_plugin_offlinehtml extends DokuWiki_Admin_Plugin {
+class admin_plugin_offlinehtml2 extends DokuWiki_Admin_Plugin {
  
 	var $exportpath = '';
 	
@@ -47,7 +47,7 @@ class admin_plugin_offlinehtml extends DokuWiki_Admin_Plugin {
 			'author' => 'Jan Wessely',
 			'email'  => 'info@jawe.net',
 			'date'   => '2007-03-01',
-			'name'   => 'offlinehtml (admin plugin)',
+			'name'   => 'offlinehtml2 (admin plugin)',
 			'desc'   => 'Saves XHTML files of pages in all or a set of namespaces',
 			'url'    => 'http://jawe.net/wiki/proj/dokuwiki/plugins/offlinehtml',
 		);

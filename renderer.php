@@ -9,7 +9,7 @@ if(!defined('DOKU_INC')) die();
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 require_once(DOKU_INC.'inc/parser/xhtml.php');
 
-class renderer_plugin_offlinehtml extends Doku_Renderer_xhtml {
+class renderer_plugin_offlinehtml2 extends Doku_Renderer_xhtml {
 
 	var $ext = '.html';
 
@@ -21,7 +21,7 @@ class renderer_plugin_offlinehtml extends Doku_Renderer_xhtml {
 			'author' => 'Jan Wessely',
 			'email'  => 'info@jawe.net',
 			'date'   => '2007-03-01',
-			'name'   => 'offlinehtml (renderer plugin)',
+			'name'   => 'offlinehtml2 (renderer plugin)',
 			'desc'   => 'Saves XHTML files of pages in all or a set of namespaces',
 			'url'    => 'http://jawe.net/wiki/proj/dokuwiki/plugins/offlinehtml',
 		);
